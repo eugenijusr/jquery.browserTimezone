@@ -25,7 +25,7 @@
 			var minutes = Math.abs(offset - 60 * hours);
 			
 			// Pad hours and minutes for matching with select options.
-			var hourString = zeroPad(hours, 2);
+			var hourString = padZeros(hours, 2);
 			if (!hourString.indexOf('-') == 0) {
 				hourString = '\\+' + hourString;
 			}

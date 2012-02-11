@@ -29,7 +29,7 @@
 			if (!hourString.indexOf('-') == 0) {
 				hourString = '\\+' + hourString;
 			}
-			var minuteString = zeroPad(minutes, 2);
+			var minuteString = padZeros(minutes, 2);
 			
 			// Loop though select options.
 			$this.find('option').each(function(){
